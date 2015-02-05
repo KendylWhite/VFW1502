@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.deandre.iossimtest</id>
-    <name>iOS Simulator Test</name>
+    <id>com.deandre.project1</id>
+    <name>White_Kendyl_Project1</name>
     <version>1.0</version>
     <publisher>iKendyl</publisher>
     <url>http://</url>
-    <description>undefined</description>
+    <description/>
     <copyright>2015 by iKendyl</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>cfdd3544-9033-439f-a0e0-5c97d8a7e645</guid>
+    <guid>c8a8b1d3-3556-43f7-91ad-c46ead092349</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <ios>
         <plist>
@@ -49,7 +49,7 @@
     </mobileweb>
     <modules/>
     <deployment-targets>
-        <target device="android">false</target>
+        <target device="android">true</target>
         <target device="blackberry">false</target>
         <target device="ipad">true</target>
         <target device="iphone">true</target>
