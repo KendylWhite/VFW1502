@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.deandre.project1</id>
-    <name>White_Kendyl_Project1</name>
+    <id>com.deandre.exports</id>
+    <name>3.2 Exports</name>
     <version>1.0</version>
     <publisher>iKendyl</publisher>
     <url>http://</url>
-    <description>undefined</description>
+    <description/>
     <copyright>2015 by iKendyl</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>c8a8b1d3-3556-43f7-91ad-c46ead092349</guid>
+    <guid>15c4bb58-c956-43cd-bcf3-29d5d3585f54</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <ios>
         <plist>

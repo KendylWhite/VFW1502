@@ -22,10 +22,10 @@ var label1 = Ti.UI.createLabel({
 var label2 = Ti.UI.createLabel({
 	color: "#000",
 	font: { fontSize:36 },
-	text: wildAnimals[0],
+	text: "Wild Animals",
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
 	top: 100,
-	width: 200, height: 100
+	width: 200, height: 100,
 });
 
 var label3 = Ti.UI.createLabel({
@@ -38,6 +38,14 @@ var label3 = Ti.UI.createLabel({
 	width: 200, height: 100
 });
 
+var view2 = Ti.UI.createView({
+	backgroundColor: "#50ffffff",
+	width: 60,
+	height: 20,
+	top: 40,
+	left: 3,
+});
+
 var label4 = Ti.UI.createLabel({
 	color: "#000",
 	font: { fontSize:12 },
@@ -48,6 +56,14 @@ var label4 = Ti.UI.createLabel({
 	width: 200, height: 100
 });
 
+var view3 = Ti.UI.createView({
+	backgroundColor: "#50ffffff",
+	width: 35,
+	height: 20,
+	top: 40,
+	right: 5,
+});
+
 //Create a view
 var view1 = Ti.UI.createView({
 	backgroundImage: "lion7.jpg",
@@ -55,16 +71,36 @@ var view1 = Ti.UI.createView({
 	height: 200,
 });
 
-var view2 = Ti.UI.createView({
-	backgroundImage: "tigers.jpg",
-	width: 300,
-	height: 200,
+counter = 0;
+test: wildAnimals[0];
+
+view3.addEventListener('click', function(event){
+	label2.text = wildAnimals[counter];
+	console.log(counter);
+	if(counter < wildAnimals.length - 1){
+	counter++;
+}else{
+	counter = 0;
+}
 });
+
+view2.addEventListener('click', function(event){
+	label2.text = wildAnimals[counter];
+	console.log(counter);
+	if(counter == 0){
+		counter = wildAnimals.length - 1;
+	}else{
+		counter--;
+	}
+});
+
 
 //add is a method
 win.add(label1);
 win.add(label2);
+win.add(view2);
 win.add(label3);
+win.add(view3);
 win.add(label4);
 win.add(view1);
 win.open();
