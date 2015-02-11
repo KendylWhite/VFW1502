@@ -1,4 +1,4 @@
-
+//This is the final code for Project 1
 //Array
 var wildAnimals = ['Lion', 'Tiger', 'Leopard', 'Bear', 'Gorilla'];
 
