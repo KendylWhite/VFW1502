@@ -97,21 +97,41 @@ for(i = 0; i < fiction.length; i++){
 	fictionSection.add(row);
 };
 
-//Table
-var table = Ti.UI.createTableView({
+//Tables
+var tableA = Ti.UI.createTableView({
 	style: Ti.UI.iPhone.TableViewStyle.GROUPED,
-	data: [actionSection, comedySection, fictionSection],
+	data: [actionSection],
 	separatorColor: "#132139",
 	headerTitle: "Movies",
 	top: 20,
 });
 
-win.add(table);
+winAction.add(tableA);
+
+var tableC = Ti.UI.createTableView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED,
+	data: [comedySection],
+	separatorColor: "#132139",
+	headerTitle: "Movies",
+	top: 20,
+});
+
+winComedy.add(tableC);
+
+var tableF = Ti.UI.createTableView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED,
+	data: [fictionSection],
+	separatorColor: "#132139",
+	headerTitle: "Movies",
+	top: 20,
+});
+
+winFiction.add(tableF);
 
 //Device Detection
 var osName = Ti.Platform.name;
 console.log(osName);
 if(osName === "iPhone OS"){
-	table.style = Ti.UI.iPhone.TableViewStyle.GROUPED;
+	tableA.style = Ti.UI.iPhone.TableViewStyle.GROUPED;
 }
 
