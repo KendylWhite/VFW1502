@@ -1,6 +1,6 @@
 //Window
 var win = Ti.UI.createWindow({
-	backgroundColor: "f1e904"
+	backgroundColor: "#f1e904"
 });
 
 //Windows
@@ -30,14 +30,14 @@ var winFiction = Titanium.UI.createWindow({
 
 //Buttons
 var buttonA = Titanium.UI.createButton({
-    title: 'Open Action Window',
+    title: 'Action Table',
     top: 250,
 });
 var buttonC = Titanium.UI.createButton({
-    title: 'Open Comedy Window'
+    title: 'Comedy Table'
 });
 var buttonF = Titanium.UI.createButton({
-    title: 'Open Fiction Window',
+    title: 'Fiction Table',
     bottom: 250,
 });
 
@@ -55,17 +55,17 @@ buttonF.addEventListener('click', function(){
 
 winMovies.add(buttonA);
 var buttonAc = Titanium.UI.createButton({
-    title: 'Close Action Window'
+    title: 'Close Action'
 });
 
 winMovies.add(buttonC);
 var buttonCo = Titanium.UI.createButton({
-    title: 'Close Comedy Window'
+    title: 'Close Comedy'
 });
 
 winMovies.add(buttonF);
 var buttonFi = Titanium.UI.createButton({
-    title: 'Close Fiction Window'
+    title: 'Close Fiction'
 });
 
 buttonAc.addEventListener('click', function(){
@@ -87,4 +87,5 @@ winM.open();
 
 //Place on screen
 require("secondary2");
+require("secondary3");
 winM.open();
