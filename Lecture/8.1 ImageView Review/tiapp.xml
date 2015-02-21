@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.deandre.layouts</id>
-    <name>7.1 Absolute Layouts</name>
+    <id>com.deandre.review</id>
+    <name>8.1 ImageView Review</name>
     <version>1.0</version>
     <publisher>iKendyl</publisher>
     <url>http://</url>
-    <description>undefined</description>
+    <description/>
     <copyright>2015 by iKendyl</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>aefe2ad0-0738-4b42-87fe-a226ccd0246b</guid>
+    <guid>80fa654b-ba3f-4caf-b08e-21e84c908067</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <ios>
         <plist>

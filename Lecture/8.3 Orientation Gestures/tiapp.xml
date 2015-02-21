@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.deandre.layouts</id>
-    <name>7.1 Absolute Layouts</name>
+    <id>com.deandre.gestures</id>
+    <name>8.3 Orientation Gestures</name>
     <version>1.0</version>
     <publisher>iKendyl</publisher>
     <url>http://</url>
-    <description>undefined</description>
+    <description/>
     <copyright>2015 by iKendyl</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>aefe2ad0-0738-4b42-87fe-a226ccd0246b</guid>
+    <guid>b2b43689-bc7c-429a-bffa-35140cd940e5</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <ios>
         <plist>
