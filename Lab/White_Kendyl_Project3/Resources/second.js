@@ -46,6 +46,7 @@ var jShoes = Ti.UI.createImageView({
 		id: i,
 });
 	var jLabel = Ti.UI.createLabel({
+		backgroundColor: "#95ffffff",
 		color: "red",
 		text: "Jordan " + (i + 1),
 		top: 0,
@@ -55,6 +56,7 @@ var jShoes = Ti.UI.createImageView({
 	
 	var jSwipe = Ti.UI.createImageView({
 	image: "shoes/" + shoesList[i],
+	borderColor: "black",
 	width: deviceWidth,
 });
 
