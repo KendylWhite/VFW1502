@@ -28,14 +28,7 @@ var shoes = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "shoes");
 var shoesList = shoes.getDirectoryListing();
 console.log(shoesList);
 
-//ScrollView
-var scrollWin = Ti.UI.createScrollView({
-	//Set layout
-	layout: "horizontal",
-	//Set contentWidth
-	contentWidth: deviceWidth,
-	top: 20,
-});
+var viewsContainer = [];
 
 //Loop
 for(var i = 0; i < shoesList.length; i++){
@@ -56,7 +49,25 @@ var jShoes = Ti.UI.createImageView({
 });
 	jShoes.add(jLabel);
 	viewJordan.add(jShoes);
-}
+	
+	var jSwipe = Ti.UI.createImageView({
+	image: "shoes/" + shoesList[i],
+	width: deviceWidth,
+});
 
-//Add
-winJordan.add(viewJordan);
+var zoom = Ti.UI.createScrollView({
+	maxZoomScale: 2.0,
+});
+
+zoom.add(jSwipe);
+//winJordan.add(zoom);
+viewsContainer.push(zoom);
+
+}
+var swipe = Ti.UI.createScrollableView({
+	views: viewsContainer,
+	showPagingControl: true,
+});
+
+winJordan.add(swipe);
+//winJordan.add(viewJordan);
