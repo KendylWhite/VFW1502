@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.deandre.review</id>
-    <name>8.1 ImageView Review</name>
+    <id>com.deandre.zoom</id>
+    <name>9.1 ScrollView Zoom</name>
     <version>1.0</version>
     <publisher>iKendyl</publisher>
     <url>http://</url>
-    <description>undefined</description>
+    <description/>
     <copyright>2015 by iKendyl</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>80fa654b-ba3f-4caf-b08e-21e84c908067</guid>
+    <guid>1055753f-8d34-4c61-b618-e4dd92c1388f</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <ios>
         <plist>
