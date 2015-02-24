@@ -59,7 +59,7 @@ var jShoes = Ti.UI.createImageView({
 });
 
 var zoom = Ti.UI.createScrollView({
-	maxZoomScale: 2.0,
+	maxZoomScale: 3.0,
 });
 
 zoom.add(jSwipe);
@@ -69,7 +69,7 @@ jShoes.addEventListener("click", function(event){
 	console.log(event.source.id);
 	swipe.currentPage = event.source.id;
 	swipeWin.add(swipe);
-	swipeWin.open();
+	winJs.openWindow(swipeWin);
 });
 }
 var swipe = Ti.UI.createScrollableView({
@@ -78,6 +78,4 @@ var swipe = Ti.UI.createScrollableView({
 	showPagingControl: true,
 });
 
-
-//winJordan.add(swipe);
 winJordan.add(viewJordan);
