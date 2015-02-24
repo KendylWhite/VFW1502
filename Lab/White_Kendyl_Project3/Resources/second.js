@@ -30,6 +30,8 @@ console.log(shoesList);
 
 var viewsContainer = [];
 
+var swipeWin = Ti.UI.createWindow();
+
 //Loop
 for(var i = 0; i < shoesList.length; i++){
 //Image View
@@ -41,6 +43,7 @@ var jShoes = Ti.UI.createImageView({
 		left: space,
 		right: space,
 		bottom: space,
+		id: i,
 });
 	var jLabel = Ti.UI.createLabel({
 		color: "red",
@@ -60,14 +63,21 @@ var zoom = Ti.UI.createScrollView({
 });
 
 zoom.add(jSwipe);
-//winJordan.add(zoom);
 viewsContainer.push(zoom);
 
+jShoes.addEventListener("click", function(event){
+	console.log(event.source.id);
+	swipe.currentPage = event.source.id;
+	swipeWin.add(swipe);
+	swipeWin.open();
+});
 }
 var swipe = Ti.UI.createScrollableView({
 	views: viewsContainer,
+	backgroundColor: "red",
 	showPagingControl: true,
 });
 
-winJordan.add(swipe);
-//winJordan.add(viewJordan);
+
+//winJordan.add(swipe);
+winJordan.add(viewJordan);
