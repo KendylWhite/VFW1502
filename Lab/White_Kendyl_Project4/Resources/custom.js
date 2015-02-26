@@ -1,3 +1,10 @@
+//Window
+var winCust = Ti.UI.createWindow({
+	backgroundColor: "#686868",
+	title: "Trailers",
+});
+
+// Create Button
 var labelFc = Ti.UI.createLabel({
 	color: "#C10000",
 	font: { fontSize:24 },
@@ -15,5 +22,10 @@ var fCbutton = Ti.UI.createView({
 	top: 195,
 });
 
+//Add Button
 winFF.add(fCbutton);
 winFF.add(labelFc);
+
+fCbutton.addEventListener('click', function(){
+    winFF.openWindow(winCust, {animated:true});
+});
