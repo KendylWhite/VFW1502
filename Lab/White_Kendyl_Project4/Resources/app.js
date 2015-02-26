@@ -3,7 +3,7 @@
 //Window
 var winFast = Ti.UI.createWindow({
 	backgroundColor: "#686868",
-	title: "The Fast & The Furious",
+	title: "The Fast and the Furious",
 });
 
 var viewF = Titanium.UI.createView({

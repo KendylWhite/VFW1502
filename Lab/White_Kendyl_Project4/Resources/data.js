@@ -29,3 +29,34 @@ winFF.add(labelFd);
 fDbutton.addEventListener('click', function(){
     winFF.openWindow(winData, {animated:true});
 });
+
+//Table
+var fast = [
+	{title: "The Fast and the Furious"},
+	{title: "2 Fast 2 Furious"},
+	{title: "The Fast and the Furious: Tokyo Drift"},
+	{title: "Fast & Furious"},
+	{title: "Fast Five"},
+	{title: "Fast & Furious 6"},
+	{title: "Furious 7"},
+];
+
+var fastSection = Ti.UI.createTableViewSection({
+	footerTitle: "Ride Or Die",
+});
+
+for(i = 0; i < fast.length; i++){
+	var fastRow = Ti.UI.createTableViewRow({
+		title: fast[i].title
+	});
+	fastSection.add(fastRow);
+};
+
+var tableF = Ti.UI.createTableView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED,
+	data: [fastSection],
+	separatorColor: "#C10000",
+	headerTitle: "The Fast and the Furious Series",
+});
+
+winData.add(tableF);
