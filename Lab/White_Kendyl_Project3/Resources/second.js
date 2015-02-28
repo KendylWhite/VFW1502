@@ -1,3 +1,4 @@
+//Resubmit
 //Platform width
 var deviceWidth = Ti.Platform.displayCaps.platformWidth;
 console.log(deviceWidth);
