@@ -1,13 +1,14 @@
 //Kendyl White - Project 4
 
+//Platform width
+var deviceWidth = Ti.Platform.displayCaps.platformWidth;
+console.log(deviceWidth);
+
 //Window
 var winFast = Ti.UI.createWindow({
+	backgroundImage: "challenger.jpg",
 	backgroundColor: "#686868",
 	title: "The Fast and the Furious",
-});
-
-var viewF = Titanium.UI.createView({
-	backgroundImage: "challenger.jpg",
 });
 
 //Nav Window
@@ -21,5 +22,4 @@ require("data");
 require("custom");
 
 //Open
-winFast.add(viewF);
 winFF.open();

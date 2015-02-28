@@ -12,19 +12,19 @@ var labelFd = Ti.UI.createLabel({
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
 	width: 150, 
 	height: 50,
-	top: 135,
+	top: 70,
 });
 
 var fDbutton = Ti.UI.createView({
 	backgroundColor: "#99B4B4B4",
 	width: 150,
 	height: 50,
-	top: 135,
+	top: 70,
 });
 
 //Add Button
-winFF.add(fDbutton);
-winFF.add(labelFd);
+winFast.add(fDbutton);
+winFast.add(labelFd);
 
 fDbutton.addEventListener('click', function(){
     winFF.openWindow(winData, {animated:true});
@@ -57,6 +57,7 @@ var tableF = Ti.UI.createTableView({
 	data: [fastSection],
 	separatorColor: "#C10000",
 	headerTitle: "The Fast and the Furious Series",
+	top: 3,
 });
 
 winData.add(tableF);

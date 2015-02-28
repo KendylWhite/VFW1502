@@ -1,7 +1,3 @@
-//Platform width
-var deviceWidth = Ti.Platform.displayCaps.platformWidth;
-console.log(deviceWidth);
-
 //Window
 var winGal = Ti.UI.createWindow({
 	backgroundColor: "#686868",
@@ -16,19 +12,19 @@ var labelFg = Ti.UI.createLabel({
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
 	width: 150, 
 	height: 50,
-	top: 75,
+	top: 10,
 });
 
 var fGbutton = Ti.UI.createView({
 	backgroundColor: "#75686868",
 	width: 150,
 	height: 50,
-	top: 75,
+	top: 10,
 });
 
 //Add Button
-winFF.add(fGbutton);
-winFF.add(labelFg);
+winFast.add(fGbutton);
+winFast.add(labelFg);
 
 fGbutton.addEventListener('click', function(){
     winFF.openWindow(winGal, {animated:true});
@@ -36,11 +32,12 @@ fGbutton.addEventListener('click', function(){
 
 var fast = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "fastPics");
 var fastList = fast.getDirectoryListing();
-console.log(fastList);
 
+for(i = 0; i < fastList.length; i++){
 var fastImage = Ti.UI.createImageView({
-	image: "fastPics/" + fastList,
+	image: "fastPics/" + fastList[i],
 	width: deviceWidth,
 });
+}
 
 winGal.add(fastImage);

@@ -12,20 +12,33 @@ var labelFc = Ti.UI.createLabel({
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
 	width: 150, 
 	height: 50,
-	top: 195,
+	top: 130,
 });
 
 var fCbutton = Ti.UI.createView({
 	backgroundColor: "#75FFFFFF",
 	width: 150,
 	height: 50,
-	top: 195,
+	top: 130,
 });
 
 //Add Button
-winFF.add(fCbutton);
-winFF.add(labelFc);
+winFast.add(fCbutton);
+winFast.add(labelFc);
 
 fCbutton.addEventListener('click', function(){
     winFF.openWindow(winCust, {animated:true});
 });
+
+var videoPlayer = Titanium.Media.createVideoPlayer({
+    top : 3,
+    autoplay : false,
+    backgroundColor : '#75000000',
+    width : deviceWidth,
+    height : 200,
+    mediaControlStyle : Titanium.Media.VIDEO_CONTROL_DEFAULT,
+    scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FIT
+});
+
+videoPlayer.url = "fastVids/fast1vid.mp4";
+winCust.add(videoPlayer);
