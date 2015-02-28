@@ -32,13 +32,13 @@ fDbutton.addEventListener('click', function(){
 
 //Table
 var fast = [
-	{title: "The Fast and the Furious"},
-	{title: "2 Fast 2 Furious"},
-	{title: "The Fast and the Furious: Tokyo Drift"},
-	{title: "Fast & Furious"},
-	{title: "Fast Five"},
-	{title: "Fast & Furious 6"},
-	{title: "Furious 7"},
+	{title: "The Fast and the Furious", image: "fastPics/fast1.jpg"},
+	{title: "2 Fast 2 Furious", image: "fastPics/fast2.jpg"},
+	{title: "The Fast and the Furious: Tokyo Drift", image: "fastPics/fast3.jpg"},
+	{title: "Fast & Furious", image: "fastPics/fast4.jpeg"},
+	{title: "Fast Five", image: "fastPics/fast5.jpg"},
+	{title: "Fast & Furious 6", image: "fastPics/fast6.jpg"},
+	{title: "Furious 7", image: "fastPics/fast7.jpg"},
 ];
 
 var fastSection = Ti.UI.createTableViewSection({
@@ -50,7 +50,16 @@ for(i = 0; i < fast.length; i++){
 		title: fast[i].title
 	});
 	fastSection.add(fastRow);
-};
+	
+	fastRow.addEventListener('click', function(event){
+	var detailWin = Ti.UI.createWindow({ 
+        backgroundColor: "#686868",
+        title: "Fast",
+        views: fast,
+    }); 
+    detailWin.open();
+});
+}
 
 var tableF = Ti.UI.createTableView({
 	style: Ti.UI.iPhone.TableViewStyle.GROUPED,
@@ -61,3 +70,6 @@ var tableF = Ti.UI.createTableView({
 });
 
 winData.add(tableF);
+
+
+

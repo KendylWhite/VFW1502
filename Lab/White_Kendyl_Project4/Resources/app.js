@@ -1,8 +1,11 @@
 //Kendyl White - Project 4
 
-//Platform width
+//Platform width & height
 var deviceWidth = Ti.Platform.displayCaps.platformWidth;
 console.log(deviceWidth);
+
+var deviceHeight = Ti.Platform.displayCaps.platformHeight;
+console.log(deviceHeight);
 
 //Window
 var winFast = Ti.UI.createWindow({
