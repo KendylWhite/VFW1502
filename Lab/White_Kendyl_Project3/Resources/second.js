@@ -25,7 +25,7 @@ var viewJordan = Ti.UI.createScrollView({
 	top: 20,
 });
 
-var shoes = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "shoes");
+var shoes = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "shoeImages");
 var shoesList = shoes.getDirectoryListing();
 console.log(shoesList);
 
@@ -37,7 +37,7 @@ var swipeWin = Ti.UI.createWindow();
 for(var i = 0; i < shoesList.length; i++){
 //Image View
 var jShoes = Ti.UI.createImageView({
-	image: "shoes/" + shoesList[i],
+	image: "shoeImages/" + shoesList[i],
 		borderColor: "black",
 		width: itemSize,
 		height: itemSize,
@@ -56,7 +56,7 @@ var jShoes = Ti.UI.createImageView({
 	viewJordan.add(jShoes);
 	
 	var jSwipe = Ti.UI.createImageView({
-	image: "shoes/" + shoesList[i],
+	image: "shoeImages/" + shoesList[i],
 	borderColor: "black",
 	width: deviceWidth,
 });

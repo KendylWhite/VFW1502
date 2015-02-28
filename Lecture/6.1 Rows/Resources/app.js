@@ -1,5 +1,5 @@
 var win = Ti.UI.createWindow({backgroundColor: "#ffffff"});
-var deatil = Ti.UI.createWindow({nackfroundColor: "blue"});
+var deatil = Ti.UI.createWindow({backgroundColor: "blue"});
 
 var table = Ti.UI.createTableView();
 var sectionsCollection = [];
@@ -24,8 +24,8 @@ for(var i = 0; i < data.length; i++){
 	}
 }
 
-row.addEventListener('click', funtion(){
-	detail.open;
+row.addEventListener('click', function(){
+
 });
 
 section.add(row);
