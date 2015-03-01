@@ -16,7 +16,8 @@ var labelFg = Ti.UI.createLabel({
 });
 
 var fGbutton = Ti.UI.createView({
-	backgroundColor: "#75686868",
+	backgroundColor: "#99686868",
+	borderColor: "#C10000",
 	width: 150,
 	height: 50,
 	top: 10,
